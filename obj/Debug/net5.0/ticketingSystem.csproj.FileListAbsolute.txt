@@ -1,0 +1,16 @@
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.exe
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.deps.json
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.runtimeconfig.json
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.runtimeconfig.dev.json
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.dll
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ref\ticketingSystem.dll
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\bin\Debug\net5.0\ticketingSystem.pdb
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.csprojAssemblyReference.cache
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.AssemblyInfoInputs.cache
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.AssemblyInfo.cs
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.dll
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ref\ticketingSystem.dll
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.pdb
+C:\Users\Corey\DotNetDB Projects\ticketingSystem\obj\Debug\net5.0\ticketingSystem.genruntimeconfig.cache
