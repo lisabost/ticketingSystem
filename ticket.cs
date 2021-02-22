@@ -30,29 +30,33 @@ namespace ticketingSystem
         }
 
         //methods - getters and setters
-        public string ticketNum
+        public int GetTicketNum()
         {
-            get; set;
+            return _ticketNum;
         }
-        public string Summary
+        public string GetSummary()
         {
-            get; set;
+            return _summary;
         }
-        public string Status
+        public string GetStatus()
         {
-            get; set;
+            return _status;
         }
-        public string Priortiy
+        public string GetPriority()
         {
-            get; set;
+            return _priority;
         }
-        public string Submitter
+        public string GetSubmitter()
         {
-            get; set;
+            return _submitter;
         }
-        public string[] Watching
+        public string GetAssigned()
         {
-            get; set;
+            return _assigned;
+        }
+        public string GetWatching()
+        {
+            return _watching;
         }
 
         //override the ToString
