@@ -43,7 +43,7 @@ namespace ticketingSystem
                         string status = Console.ReadLine();
                         //priortiy
                         Console.WriteLine("Enter the ticket's priorty");
-                        string priortiy = Console.ReadLine();
+                        string priority = Console.ReadLine();
                         //submitter
                         Console.WriteLine("Enter the ticket's submitter");
                         string sub = Console.ReadLine();
@@ -59,7 +59,11 @@ namespace ticketingSystem
                             Console.WriteLine("Who is watching this ticket");
                             watching[i] = Console.ReadLine();
                         }
-                        sw.WriteLine("{0},{1},{2},{3},{4},{5},{6}", ticketNum, prob, status, priortiy, sub, assigned, string.Join("|", watching));
+                        //make a ticket
+                        // Ticket ticket = new Ticket(ticketNum++, prob, status, priority, sub, assigned, string.Join("|", watching));
+
+
+                        sw.WriteLine("{0},{1},{2},{3},{4},{5},{6}", ticketNum, prob, status, priority, sub, assigned, string.Join("|", watching));
                     }
                     sw.Close();
                 }
@@ -70,7 +74,7 @@ namespace ticketingSystem
                     {
                         //get tickets from FileReader
                         List<Ticket> ticketsInFile = fr.ReadAll();
-                        foreach(var item in ticketsInFile)
+                        foreach (var item in ticketsInFile)
                         {
                             Console.WriteLine(item);
                         }
