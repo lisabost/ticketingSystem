@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace ticketingSystem
 {
@@ -9,19 +10,10 @@ namespace ticketingSystem
         {
             string file = "tickets.txt";
             string choice;
-            //get current ticketNum from file based on number of tickets already assinged
-            int ticketNum = TotalLines(file);
 
-            //read the number of lines in the text file to not reuse ticket numbers
-            int TotalLines(string filePath)
-            {
-                using (StreamReader r = new StreamReader(filePath))
-                {
-                    int i = 0;
-                    while (r.ReadLine() != null) { i++; }
-                    return i;
-                }
-            }
+            FileReader fr = new FileReader();
+            //get current ticketNum from file based on number of tickets already assinged
+            int ticketNum = fr.TotalLines();
             do
             {
                 Console.WriteLine("1) Enter a new ticket");
