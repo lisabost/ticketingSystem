@@ -27,7 +27,7 @@ namespace ticketingSystem
             this._watching = watching;
         }
 
-        //methods
+        //methods - getters and setters
         public string Summary
         {
             get; set;
@@ -47,6 +47,13 @@ namespace ticketingSystem
         public string Watcher
         {
             get; set;
+        }
+
+        //override the ToString
+        public override string ToString()
+        {
+            return "Ticket Number:" + this._ticketNum + ", Summary: " + this._summary + ", Status: " 
+            + this._status + ", Priority: " + this._priority + ", Submitter: " + this._submitter + ", Watching: " + this._watching;
         }
     }
 
