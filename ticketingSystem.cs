@@ -6,6 +6,12 @@ namespace ticketingSystem
 {
     class ticketingSystem
     {
-        private List<string> ticketList;
+        private List<Ticket> ticketList;
+
+        public void addTicket(Ticket ticket)
+        {
+            ticketList.Add(ticket);
+        }
     }
+
 }
