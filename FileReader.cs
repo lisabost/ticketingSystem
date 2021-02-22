@@ -11,11 +11,11 @@ namespace ticketingSystem
     {
         //fields
         private static string _filepath = "tickets.txt";
-        StreamReader sr = new StreamReader(_filepath);
 
         //method to find the total number of lines in the file
         public int TotalLines()
         {
+            StreamReader sr = new StreamReader(_filepath);
             using (sr)
             {
                 int i = 0;
@@ -28,12 +28,12 @@ namespace ticketingSystem
         public List<Ticket> ReadAll()
         {
             List<Ticket> ticketsFromFile = new List<Ticket>();
+            StreamReader sr = new StreamReader(_filepath);
             while (!sr.EndOfStream)
             {
                 string line = sr.ReadLine();
                 string[] arr = line.Split(',');
                 ticketsFromFile.Add(new Ticket(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]));
-
             }
             return ticketsFromFile;
         }
