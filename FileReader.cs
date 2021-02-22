@@ -24,6 +24,20 @@ namespace ticketingSystem
             }
         }
 
+        //method to read the lines already in the file
+        public List<Ticket> ReadAll()
+        {
+            List<Ticket> ticketsFromFile = new List<Ticket>();
+            while (!sr.EndOfStream)
+            {
+                string line = sr.ReadLine();
+                string[] arr = line.Split(',');
+                ticketsFromFile.Add(new Ticket(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]));
+
+            }
+            return ticketsFromFile;
+        }
+
 
     }
 }
