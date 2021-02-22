@@ -8,7 +8,7 @@ namespace ticketingSystem
     {
         private List<Ticket> ticketList;
 
-        public void addTicket(Ticket ticket)
+        public void AddTicket(Ticket ticket)
         {
             ticketList.Add(ticket);
         }
