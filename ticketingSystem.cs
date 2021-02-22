@@ -12,6 +12,11 @@ namespace ticketingSystem
         {
             ticketList.Add(ticket);
         }
+
+        public List<Ticket> GetTickets()
+        {
+            return ticketList;
+        }
     }
 
 }
