@@ -12,6 +12,7 @@ namespace ticketingSystem
             string choice;
 
             FileReader fr = new FileReader();
+            
             //get current ticketNum from file based on number of tickets already assinged
             int ticketNum = fr.TotalLines();
             do
@@ -25,7 +26,7 @@ namespace ticketingSystem
                 if (choice == "1")
                 {
                     //create new file from data - if old file exists, append new data to existing file
-                    StreamWriter sw = new StreamWriter(file, append: true);
+                    FileWriter fw = new FileWriter();
 
                     //find out how many tickets they want to enter
                     Console.WriteLine("How many tickets do you have to enter?");
@@ -60,12 +61,9 @@ namespace ticketingSystem
                             watching[i] = Console.ReadLine();
                         }
                         //make a ticket
-                        // Ticket ticket = new Ticket(ticketNum++, prob, status, priority, sub, assigned, string.Join("|", watching));
-
-
-                        sw.WriteLine("{0},{1},{2},{3},{4},{5},{6}", ticketNum, prob, status, priority, sub, assigned, string.Join("|", watching));
+                        Ticket ticket = new Ticket(ticketNum++, prob, status, priority, sub, assigned, string.Join("|", watching));
+                        fw.WriteToFile(ticket);
                     }
-                    sw.Close();
                 }
                 else if (choice == "2")
                 {
