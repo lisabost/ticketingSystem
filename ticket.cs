@@ -1,11 +1,13 @@
 using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace ticketingSystem
 {
-    class ticket
+    class Ticket
     {
-        //ticket fields
+        //ticket fields set to private
+        private string _ticketNum;
         private string _summary;
         private string _status;
         private string _priority;
@@ -13,7 +15,7 @@ namespace ticketingSystem
         private string[] _watching;
 
         //constructor
-        public ticket()
+        public Ticket()
         {
 
         }

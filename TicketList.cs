@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ticketingSystem
 {
-    class ticketingSystem
+    class TicketList
     {
         private List<Ticket> ticketList;
 
@@ -18,5 +18,4 @@ namespace ticketingSystem
             return ticketList;
         }
     }
-
 }
