@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace ticketingSystem
 {
-    class ScreenWriter
+    class ConsoleWriter
     {
-        public ScreenWriter() { }
+        public ConsoleWriter() { }
 
         public WriteToScreen(string input)
         {
