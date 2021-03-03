@@ -1,30 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Corey\\DotNetDB Projects\\ticketingSystem\\ticketingSystem.csproj": {}
+    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Corey\\DotNetDB Projects\\ticketingSystem\\ticketingSystem.csproj": {
+    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Corey\\DotNetDB Projects\\ticketingSystem\\ticketingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj",
         "projectName": "ticketingSystem",
-        "projectPath": "C:\\Users\\Corey\\DotNetDB Projects\\ticketingSystem\\ticketingSystem.csproj",
+        "projectPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj",
         "packagesPath": "C:\\Users\\Corey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Corey\\DotNetDB Projects\\ticketingSystem\\obj\\",
+        "outputPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Corey\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Corey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,8 +37,14 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

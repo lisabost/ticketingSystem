@@ -8,7 +8,7 @@ namespace ticketingSystem
     {
         public ConsoleWriter() { }
 
-        public WriteToScreen(string input)
+        public void WriteToScreen(string input)
         {
             Console.WriteLine(input);
         }

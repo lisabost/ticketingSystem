@@ -39,7 +39,7 @@ namespace ticketingSystem
                         //assign ticket number
                         ticketNum++;
                         //summary
-                        cw.WriteToScreen("Enter ticket {0} summary", x + 1);
+                        cw.WriteToScreen($"Enter ticket {x + 1} summary");
                         string prob = cr.ReadFromConsole();
                         //status
                         cw.WriteToScreen("Enter the ticket's status");
@@ -55,7 +55,7 @@ namespace ticketingSystem
                         string assigned = cr.ReadFromConsole();
                         //watching - can be multiple people
                         cw.WriteToScreen("How many people are watching this ticket?");
-                        int numWatching = int.Parsecr.ReadFromConsole();
+                        int numWatching = int.Parse(cr.ReadFromConsole());
                         string[] watching = new string[numWatching];
                         for (int i = 0; i < numWatching; i++)
                         {
@@ -76,7 +76,7 @@ namespace ticketingSystem
                         List<Ticket> ticketsInFile = fr.ReadAll();
                         foreach (var item in ticketsInFile)
                         {
-                            cw.WriteToScreen(item);
+                            cw.WriteToScreen(item.ToString());
                         }
                     }
                     else
