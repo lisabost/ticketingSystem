@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj": {}
+    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj": {
+    "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj",
         "projectName": "ticketingSystem",
-        "projectPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\ticketingSystem.csproj",
+        "projectPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj",
         "packagesPath": "C:\\Users\\Corey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem\\obj\\",
+        "outputPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Corey\\AppData\\Roaming\\NuGet\\NuGet.Config",
