@@ -8,7 +8,7 @@ namespace ticketingSystem
     {
         static void Main(string[] args)
         {
-            string file = "tickets.txt";
+            string file;
             string choice;
 
             FileReader fr = new FileReader();
@@ -111,27 +111,82 @@ namespace ticketingSystem
                         DateTime dueDate = DateTime.Parse(cr.ReadFromConsole());
 
                         //make our ticket and write it to the file
+                        fw.WriteTaskToFile(new Task(ticketNumber, prob, status, priority, sub, assigned, watching, projectName, dueDate));
                     }
-
-
 
                 }
                 else if (choice == "2")
                 {
-                    //make sure the file exists
-                    if (File.Exists(file))
+                    //what kind of ticket do they want to see
+                    cw.WriteToScreen("Select ticket type");
+                    cw.WriteToScreen("1) Bug or Defect");
+                    cw.WriteToScreen("2) Enhancement");
+                    cw.WriteToScreen("3) Task");
+
+                    string option = cr.ReadFromConsole();
+
+                    //bug defect tickets
+                    if (option == "1")
                     {
-                        //get tickets from FileReader
-                        List<Ticket> ticketsInFile = fr.ReadAll();
-                        foreach (var item in ticketsInFile)
+                        file = "tickets.txt";
+
+                        //make sure the file exists
+                        if (File.Exists(file))
                         {
-                            cw.WriteToScreen(item.Display());
+                            //get tickets from FileReader
+                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            foreach (var item in ticketsInFile)
+                            {
+                                cw.WriteToScreen(item.Display());
+                            }
+                        }
+                        else
+                        {
+                            cw.WriteToScreen("File does not exist");
                         }
                     }
-                    else
+                    //enhancement tickets
+                    else if (option == "2")
                     {
-                        cw.WriteToScreen("File does not exist");
+                        file = "Enhancements.txt";
+
+                        //make sure the file exists
+                        if (File.Exists(file))
+                        {
+                            //get tickets from FileReader
+                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            foreach (var item in ticketsInFile)
+                            {
+                                cw.WriteToScreen(item.Display());
+                            }
+                        }
+                        else
+                        {
+                            cw.WriteToScreen("File does not exist");
+                        }
                     }
+                    //task tickets
+                    else if (option == "3")
+                    {
+                        file = "Tasks.txt";
+
+                        //make sure the file exists
+                        if (File.Exists(file))
+                        {
+                            //get tickets from FileReader
+                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            foreach (var item in ticketsInFile)
+                            {
+                                cw.WriteToScreen(item.Display());
+                            }
+                        }
+                        else
+                        {
+                            cw.WriteToScreen("File does not exist");
+                        }
+                    }
+
+
                 }
             }
             while (choice == "1" || choice == "2");
