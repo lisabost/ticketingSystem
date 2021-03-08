@@ -9,9 +9,6 @@ namespace ticketingSystem
     */
     class FileReader
     {
-        //fields
-        private static string _filepath = "tickets.txt";
-
         //method to find the total number of lines in the file
         public int TotalLines(string filePath)
         {
