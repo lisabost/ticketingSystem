@@ -4,3 +4,33 @@
 2021-03-08 10:18:06.9234|INFO|ticketingSystem.Program|User Choice: 1
 2021-03-08 10:18:08.6571|INFO|ticketingSystem.Program|User Choice: 4
 2021-03-08 10:18:42.7030|INFO|ticketingSystem.Program|Program ended
+2021-03-08 10:26:33.5302|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:26:36.6262|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:26:40.9917|INFO|ticketingSystem.Program|User Choice: 3
+2021-03-08 10:27:19.1960|INFO|ticketingSystem.Program|New Task Ticket created
+2021-03-08 10:27:24.6320|INFO|ticketingSystem.Program|User Choice: 
+2021-03-08 10:32:47.4544|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:32:49.0130|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:32:50.8374|INFO|ticketingSystem.Program|User Choice: 3
+2021-03-08 10:33:28.2265|INFO|ticketingSystem.Program|New Task Ticket created
+2021-03-08 10:34:50.7510|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:34:52.3774|INFO|ticketingSystem.Program|User Choice: 2
+2021-03-08 10:34:53.8488|INFO|ticketingSystem.Program|Read back tasks file
+2021-03-08 10:35:18.3825|INFO|ticketingSystem.Program|Program ended
+2021-03-08 10:37:42.2569|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:37:44.0677|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:37:45.5833|INFO|ticketingSystem.Program|User Choice: 2
+2021-03-08 10:38:48.9984|INFO|ticketingSystem.Program|New Enhancement Ticket created
+2021-03-08 10:39:20.6046|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:39:21.4103|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:39:22.6357|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:39:53.6230|INFO|ticketingSystem.Program|New Bug/Defect Ticket created
+2021-03-08 10:39:53.6230|INFO|ticketingSystem.Program|Invalid choice
+2021-03-08 10:40:37.2883|INFO|ticketingSystem.Program|Program ended
+2021-03-08 10:41:03.5821|INFO|ticketingSystem.Program|Program Started
+2021-03-08 10:41:06.5154|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:41:11.7209|INFO|ticketingSystem.Program|User Choice: 1
+2021-03-08 10:42:10.6678|INFO|ticketingSystem.Program|New Bug/Defect Ticket created
+2021-03-08 10:42:15.0567|INFO|ticketingSystem.Program|User Choice: 2
+2021-03-08 10:42:17.8165|INFO|ticketingSystem.Program|Read back bug/defect file
+2021-03-08 10:42:23.6019|INFO|ticketingSystem.Program|Program ended

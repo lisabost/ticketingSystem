@@ -5,3 +5,5 @@
 5,Broken file path to server,Open,High,Lisa,Jeremy,Sam|Keri|Debbie,unasigned
 6,Program is broken,Open,High,Lisa,Corey,Sam|Jason,unasigned
 7,this is a ticket,closed,low,Hagrid,Harry,Hermione|Ron,low
+8,Program doesn't exit correctly,Open,low,Lisa,Justin,(no one is watching),High
+9,Keyboard doesn't work,Closed,Low,Yelena,David,Erica|Tim,Low

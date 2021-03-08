@@ -33,9 +33,7 @@ namespace ticketingSystem
                     //create new file from data - if old file exists, append new data to existing file
                     FileWriter fw = new FileWriter();
 
-                    do
-                    {
-                        //find out how many tickets they want to enter
+                        //find out what kind of ticket they want to enter
                         cw.WriteToScreen("Select the type of ticket.");
                         cw.WriteToScreen("1) Bug or Defect");
                         cw.WriteToScreen("2) Enhancement");
@@ -73,7 +71,7 @@ namespace ticketingSystem
                             {
                                 watching.Add(input);
                             }
-                            else
+                            if (watching.Count == 0)
                             {
                                 watching.Add("(no one is watching)");
                             }
@@ -133,10 +131,10 @@ namespace ticketingSystem
 
                             logger.Info("New Task Ticket created");
                         }
-
-                    }
-                    while (choice == "1" || choice == "2" || choice == "3");
-                    logger.Info("Invalid choice");
+                        else
+                        {
+                            logger.Info("Invalid choice");
+                        }
                 }
 
                 else if (choice == "2")

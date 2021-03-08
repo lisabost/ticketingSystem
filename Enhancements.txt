@@ -1,1 +1,2 @@
 1,Need new software for word processing,Open,High,Lisa,Stacey,Keri|Deb,Microsoft Word,565,word processing in google docs problematic,two weeks
+2,Need new computer,Open,Medium,Lisa,Lisa,Lisa|George,New computer,1925,server room needs new access terminal,two days labor
