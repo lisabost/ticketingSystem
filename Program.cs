@@ -63,6 +63,10 @@ namespace ticketingSystem
                         {
                             watching.Add(input);
                         }
+                        else
+                        {
+                            watching.Add("(no one is watching");
+                        }
                     } while (input != "done");
 
                     //Bug/Defect Ticket
@@ -134,7 +138,7 @@ namespace ticketingSystem
                         if (File.Exists(file))
                         {
                             //get tickets from FileReader
-                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            List<Ticket> ticketsInFile = fr.ReadAllBugs(file);
                             foreach (var item in ticketsInFile)
                             {
                                 cw.WriteToScreen(item.Display());
@@ -154,7 +158,7 @@ namespace ticketingSystem
                         if (File.Exists(file))
                         {
                             //get tickets from FileReader
-                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            List<Ticket> ticketsInFile = fr.ReadAllEnhancements(file);
                             foreach (var item in ticketsInFile)
                             {
                                 cw.WriteToScreen(item.Display());
@@ -174,7 +178,7 @@ namespace ticketingSystem
                         if (File.Exists(file))
                         {
                             //get tickets from FileReader
-                            List<Ticket> ticketsInFile = fr.ReadAll();
+                            List<Ticket> ticketsInFile = fr.ReadAllTasks(file);
                             foreach (var item in ticketsInFile)
                             {
                                 cw.WriteToScreen(item.Display());
@@ -185,8 +189,6 @@ namespace ticketingSystem
                             cw.WriteToScreen("File does not exist");
                         }
                     }
-
-
                 }
             }
             while (choice == "1" || choice == "2");
