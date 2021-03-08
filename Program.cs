@@ -120,7 +120,7 @@ namespace ticketingSystem
                         else if (response == "3")
                         {
                             //task tickets need project name and due date - their ticket numbers come from the Tasks.txt file
-                            int ticketNumber = fr.TotalLines("Tasks.txt");
+                            int ticketNumber = fr.TotalLines("Tasks.txt") + 1;
 
                             cw.WriteToScreen("Enter the project name");
                             string projectName = cr.ReadFromConsole();
