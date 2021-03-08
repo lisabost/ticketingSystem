@@ -4,68 +4,22 @@ using System.Collections.Generic;
 
 namespace ticketingSystem
 {
-    class Ticket
+    public abstract class Ticket
     {
         //ticket fields set to private
-        private int _ticketNum;
-        private string _summary;
-        private string _status;
-        private string _priority;
-        private string _submitter;
-        private string _assigned;
-        private string _watching;
+        public int ticketNum { get; set; }
+        public string summary { get; set; }
+        public string status { get; set; }
+        public string priority { get; set; }
+        public string submitter { get; set; }
+        public string assigned { get; set; }
+        public List<string> watching { get; set; }
 
-        //constructor
-        public Ticket(){}
-
-        public Ticket(int ticketNum, string summary, string status, string priority, string submitter, string assigned, string watching)
+        public virtual string Display()
         {
-            this._ticketNum = ticketNum;
-            this._summary = summary;
-            this._status = status;
-            this._priority = priority;
-            this._submitter = submitter;
-            this._assigned = assigned;
-            this._watching = watching;
+            return $"Ticket Id: {ticketNum}\nSummary: {summary}\nStatus: {status}\nPriority: {priority}\nSubmitter: {submitter}\nAssigned: {assigned}\nWatching: {string.Join(", ", watching)}\n";
         }
 
-        //methods - getters and setters
-        public int GetTicketNum()
-        {
-            return _ticketNum;
-        }
-        public string GetSummary()
-        {
-            return _summary;
-        }
-        public string GetStatus()
-        {
-            return _status;
-        }
-        public string GetPriority()
-        {
-            return _priority;
-        }
-        public string GetSubmitter()
-        {
-            return _submitter;
-        }
-        public string GetAssigned()
-        {
-            return _assigned;
-        }
-        public string GetWatching()
-        {
-            return _watching;
-        }
-
-        //override the ToString
-        public override string ToString()
-        {
-            return "Ticket Number:" + this._ticketNum + ", Summary: " + this._summary + ", Status: " 
-            + this._status + ", Priority: " + this._priority + ", Submitter: " +  this._submitter + ", Assigned: " 
-            + this._assigned + ", Watching: " + this._watching;
-        }
     }
 
 }
