@@ -1,6 +1,7 @@
-1,This laptop is broken,Open,High,Jane Doe,Steven Petterson,George|Jared|Corey
-2,My login doesn't work,Open,High,Henry ,Ryan,Henry|Jessica
-3,This is a bug ticket,Open,Medium,Andrew,Sara,Henry|Peter|Jeremy|Tyler
-4,This program is broken,Open,High,Lisa,Corey,Jason|Steve
-5,Broken file path to server,Open,High,Lisa,Jeremy,Sam|Keri|Debbie
-6,Program is broken,Open,High,Lisa,Corey,Sam|Jason
+1,This laptop is broken,Open,High,Jane Doe,Steven Petterson,George|Jared|Corey,unasigned
+2,My login doesn't work,Open,High,Henry ,Ryan,Henry|Jessica,unasigned
+3,This is a bug ticket,Open,Medium,Andrew,Sara,Henry|Peter|Jeremy|Tyler,unasigned
+4,This program is broken,Open,High,Lisa,Corey,Jason|Steve,unasigned
+5,Broken file path to server,Open,High,Lisa,Jeremy,Sam|Keri|Debbie,unasigned
+6,Program is broken,Open,High,Lisa,Corey,Sam|Jason,unasigned
+7,this is a ticket,closed,low,Hagrid,Harry,Hermione|Ron,low

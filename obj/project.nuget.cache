@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nXxU7SWYsN5vfmAUveCgVysm//pi+G4fsMlBEQSIxJrYrnlU2xnsvWzdTq7nuC5oD31izX6BoYM2LNLtP8uJ9w==",
+  "dgSpecHash": "girg9wdLb8k6wFP+DT//XOzRdZfb5y+XLVEr1MQXRkskgRXgMkOjXNEG3xmQa1HNMYm8oz2yp1uZGW0K4UeeDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj",
+  "projectFilePath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Corey\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
     "C:\\Users\\Corey\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",

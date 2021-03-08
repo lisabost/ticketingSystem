@@ -372,11 +372,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem.csproj",
       "projectName": "ticketingSystem",
-      "projectPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\ticketingSystem.csproj",
+      "projectPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\ticketingSystem.csproj",
       "packagesPath": "C:\\Users\\Corey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem2\\ticketingSystem\\obj\\",
+      "outputPath": "C:\\Users\\Corey\\DotNetDBProjects\\ticketingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Corey\\AppData\\Roaming\\NuGet\\NuGet.Config",
