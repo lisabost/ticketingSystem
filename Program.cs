@@ -81,7 +81,7 @@ namespace ticketingSystem
                         if (response == "1")
                         {
                             //bug tickets need severity - their ticket numbers come from the tickets.txt file
-                            int ticketNumber = fr.TotalLines("tickets.txt") + 1;
+                            int ticketNumber = fr.TotalLines("Tickets.csv") + 1;
 
                             cw.WriteToScreen("Enter severity of bug or defect");
                             string severity = cr.ReadFromConsole();
@@ -95,7 +95,7 @@ namespace ticketingSystem
                         else if (response == "2")
                         {
                             //enhancement tickets need software, cost, reason, estimate - their ticket numbers come from Enhancements.txt file
-                            int ticketNumber = fr.TotalLines("Enhancements.txt") + 1;
+                            int ticketNumber = fr.TotalLines("Enhancements.csv") + 1;
 
                             cw.WriteToScreen("Enter software needed");
                             string software = cr.ReadFromConsole();
@@ -118,7 +118,7 @@ namespace ticketingSystem
                         else if (response == "3")
                         {
                             //task tickets need project name and due date - their ticket numbers come from the Tasks.txt file
-                            int ticketNumber = fr.TotalLines("Tasks.txt") + 1;
+                            int ticketNumber = fr.TotalLines("Tasks.csv") + 1;
 
                             cw.WriteToScreen("Enter the project name");
                             string projectName = cr.ReadFromConsole();
@@ -153,7 +153,7 @@ namespace ticketingSystem
                     if (option == "1")
                     {
                         logger.Info("Read back bug/defect file");
-                        file = "tickets.txt";
+                        file = "tickets.csv";
 
                         //make sure the file exists
                         if (File.Exists(file))
@@ -174,7 +174,7 @@ namespace ticketingSystem
                     else if (option == "2")
                     {
                         logger.Info("Read back enhancements file");
-                        file = "Enhancements.txt";
+                        file = "Enhancements.csv";
 
                         //make sure the file exists
                         if (File.Exists(file))
@@ -195,7 +195,7 @@ namespace ticketingSystem
                     else if (option == "3")
                     {
                         logger.Info("Read back tasks file");
-                        file = "Tasks.txt";
+                        file = "Tasks.csv";
 
                         //make sure the file exists
                         if (File.Exists(file))
