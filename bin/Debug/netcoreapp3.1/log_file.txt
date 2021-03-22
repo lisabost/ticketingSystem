@@ -99,3 +99,7 @@
 2021-03-22 14:51:41.7604|INFO|ticketingSystem.Program|Program Started
 2021-03-22 14:51:43.5568|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
 2021-03-22 14:52:36.2603|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:54:17.6011|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:54:19.3111|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:54:42.4935|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:54:56.0587|INFO|ticketingSystem.Program|Program ended
