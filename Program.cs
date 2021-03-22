@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using NLog.Web;
+using System.Linq;
 
 namespace ticketingSystem
 {
@@ -218,10 +219,55 @@ namespace ticketingSystem
                 {
                     logger.Info("User Choice: 3 - Search tickets");
 
+                    string bugFile = "Tickets.csv";
+                    string enhanceFile = "Enhancements.csv";
+                    string taskFile = "Tasks.csv";
+
+                    List<Ticket> bugsInFile = fr.ReadAllBugs(bugFile);
+                    List<Ticket> enhanceInFile= fr.ReadAllEnhancements(enhanceFile);
+                    List<Ticket> tasksInFile= fr.ReadAllTasks(taskFile);
+
                     cw.WriteToScreen("Search by:");
                     cw.WriteToScreen("1) Status");
                     cw.WriteToScreen("2) Priority");
                     cw.WriteToScreen("3) Submitter");
+
+                    var search = cr.ReadFromConsole();
+
+                    if (search == "1")
+                    {
+                        //search by status
+                        cw.WriteToScreen("Enter status");
+                        var input = cr.ReadFromConsole().ToLower();
+
+                        var bugStatuses = bugsInFile.Where(b => b.status.ToLower().Contains(input));
+                        int bugStatusCount = bugStatuses.Count();
+
+                        var enhanceStatuses = enhanceInFile.Where(e => e.status.ToLower().Contains(input));
+                        int enhanceStatusCount = enhanceStatuses.Count();
+
+                        var taskStatuses = tasksInFile.Where(t => t.status.ToLower().Contains(input));
+                        int taskStatusCount = taskStatuses.Count();
+
+                        cw.WriteToScreen($"There are {bugStatusCount + enhanceStatusCount + taskStatusCount} tickets with a status of \"{input}\"");
+                        foreach (var b in bugStatuses) {
+                            cw.WriteToScreen(b.Display());
+                        }
+                        foreach (var e in enhanceStatuses) {
+                            cw.WriteToScreen(e.Display());
+                        }
+                        foreach (var t in taskStatuses) {
+                            cw.WriteToScreen(t.Display());
+                        }
+                    }
+                    else if (search == "2")
+                    {
+                        //search by priority
+                    }
+                    else if (search == "3")
+                    {
+                        //search by submitter
+                    }
                 }
             }
             while (choice == "1" || choice == "2" || choice == "3");
