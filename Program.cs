@@ -23,13 +23,14 @@ namespace ticketingSystem
             {
                 cw.WriteToScreen("1) Enter a new ticket");
                 cw.WriteToScreen("2) See previously entered tickets");
+                cw.WriteToScreen("3) Search tickets");
                 cw.WriteToScreen("Press enter to exit");
                 choice = cr.ReadFromConsole();
 
                 //choice 1: enter new tickets
                 if (choice == "1")
                 {
-                    logger.Info("User Choice: 1");
+                    logger.Info("User Choice: 1 - Add ticket");
                     //create new file from data - if old file exists, append new data to existing file
                     FileWriter fw = new FileWriter();
 
@@ -139,7 +140,7 @@ namespace ticketingSystem
 
                 else if (choice == "2")
                 {
-                    logger.Info("User Choice: 2");
+                    logger.Info("User Choice: 2 - Display Tickets");
 
                     //what kind of ticket do they want to see
                     cw.WriteToScreen("Select ticket type");
@@ -213,8 +214,17 @@ namespace ticketingSystem
                         }
                     }
                 }
+                else if (choice == "3")
+                {
+                    logger.Info("User Choice: 3 - Search tickets");
+
+                    cw.WriteToScreen("Search by:");
+                    cw.WriteToScreen("1) Status");
+                    cw.WriteToScreen("2) Priority");
+                    cw.WriteToScreen("3) Submitter");
+                }
             }
-            while (choice == "1" || choice == "2");
+            while (choice == "1" || choice == "2" || choice == "3");
             logger.Info("Program ended");
         }
     }
