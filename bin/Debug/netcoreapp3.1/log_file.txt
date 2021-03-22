@@ -78,3 +78,24 @@
 2021-03-22 14:13:17.9386|INFO|ticketingSystem.Program|Program Started
 2021-03-22 14:13:20.3738|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
 2021-03-22 14:13:42.4797|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:32:18.0919|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:32:19.6135|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:32:31.7038|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:36:56.7591|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:36:57.9532|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:37:39.3923|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:38:36.4873|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:38:38.0032|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:41:31.3275|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:41:32.7536|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:41:39.7477|INFO|ticketingSystem.Program|contents of ticketStatuses: System.Linq.Enumerable+WhereSelectListIterator`2[ticketingSystem.Ticket,System.String]
+2021-03-22 14:41:39.7477|INFO|ticketingSystem.Program|contents of ticketStatuses: System.Linq.Enumerable+WhereSelectListIterator`2[ticketingSystem.Ticket,System.String]
+2021-03-22 14:41:39.7477|INFO|ticketingSystem.Program|contents of ticketStatuses: System.Linq.Enumerable+WhereSelectListIterator`2[ticketingSystem.Ticket,System.String]
+2021-03-22 14:42:04.8194|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:44:16.4495|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:44:17.2880|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:44:28.9376|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:44:50.3541|INFO|ticketingSystem.Program|Program ended
+2021-03-22 14:51:41.7604|INFO|ticketingSystem.Program|Program Started
+2021-03-22 14:51:43.5568|INFO|ticketingSystem.Program|User Choice: 3 - Search tickets
+2021-03-22 14:52:36.2603|INFO|ticketingSystem.Program|Program ended
