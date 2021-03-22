@@ -249,7 +249,7 @@ namespace ticketingSystem
                         var taskStatuses = tasksInFile.Where(t => t.status.ToLower().Contains(input));
                         int taskStatusCount = taskStatuses.Count();
 
-                        cw.WriteToScreen($"There are {bugStatusCount + enhanceStatusCount + taskStatusCount} tickets with a status of \"{input}\"");
+                        cw.WriteToScreen($"There are {bugStatusCount + enhanceStatusCount + taskStatusCount} tickets with a status of \"{input}\".");
                         foreach (var b in bugStatuses) {
                             cw.WriteToScreen(b.Display());
                         }
@@ -263,6 +263,31 @@ namespace ticketingSystem
                     else if (search == "2")
                     {
                         //search by priority
+                        cw.WriteToScreen("Enter priority");
+                        var input = cr.ReadFromConsole().ToLower();
+
+                        var bugPriority = bugsInFile.Where(b => b.priority.ToLower().Contains(input));
+                        var bugPriorityCount = bugPriority.Count();
+
+                        var enhancePriority = enhanceInFile.Where(e => e.priority.ToLower().Contains(input));
+                        var enhancePriorityCount = enhancePriority.Count();
+
+                        var taskPriority = tasksInFile.Where(t => t.priority.ToLower().Contains(input));
+                        var taskPriorityCount = taskPriority.Count();
+
+                        cw.WriteToScreen($"There are {bugPriorityCount + enhancePriorityCount + taskPriorityCount} tickets with a priority of \"{input}\".");
+                        foreach (var b in bugPriority) 
+                        {
+                            cw.WriteToScreen(b.Display());
+                        }
+                        foreach (var e in enhancePriority)
+                        {
+                            cw.WriteToScreen(e.Display());
+                        }
+                        foreach (var t in taskPriority)
+                        {
+                            cw.WriteToScreen(t.Display());
+                        }
                     }
                     else if (search == "3")
                     {
