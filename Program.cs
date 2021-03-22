@@ -240,24 +240,18 @@ namespace ticketingSystem
                         cw.WriteToScreen("Enter status (Open, Closed)");
                         var input = cr.ReadFromConsole().ToLower();
 
-                        var bugStatuses = bugsInFile.Where(b => b.status.ToLower().Contains(input));
-                        int bugStatusCount = bugStatuses.Count();
+                        var bugStatus = bugsInFile.Where(b => b.status.ToLower().Contains(input)).Select(b => b.Display());
+                        var enhanceStatus = enhanceInFile.Where(e => e.status.ToLower().Contains(input)).Select(e => e.Display());                        
+                        var taskStatus = tasksInFile.Where(t => t.status.ToLower().Contains(input)).Select(t => t.Display());
 
-                        var enhanceStatuses = enhanceInFile.Where(e => e.status.ToLower().Contains(input));
-                        int enhanceStatusCount = enhanceStatuses.Count();
+                        var ticketStatus = bugStatus.Concat(enhanceStatus).Concat(taskStatus);
 
-                        var taskStatuses = tasksInFile.Where(t => t.status.ToLower().Contains(input));
-                        int taskStatusCount = taskStatuses.Count();
+                        int ticketCount = ticketStatus.Count();
 
-                        cw.WriteToScreen($"There are {bugStatusCount + enhanceStatusCount + taskStatusCount} tickets with a status of \"{input}\".");
-                        foreach (var b in bugStatuses) {
-                            cw.WriteToScreen(b.Display());
-                        }
-                        foreach (var e in enhanceStatuses) {
-                            cw.WriteToScreen(e.Display());
-                        }
-                        foreach (var t in taskStatuses) {
-                            cw.WriteToScreen(t.Display());
+
+                        cw.WriteToScreen($"There are {ticketCount} tickets with a status of \"{input}\".");
+                        foreach (var t in ticketStatus) {
+                            cw.WriteToScreen(t);
                         }
                     }
                     else if (search == "2")
@@ -266,27 +260,17 @@ namespace ticketingSystem
                         cw.WriteToScreen("Enter priority (High, Medium, Low)");
                         var input = cr.ReadFromConsole().ToLower();
 
-                        var bugPriority = bugsInFile.Where(b => b.priority.ToLower().Contains(input));
-                        var bugPriorityCount = bugPriority.Count();
+                        var bugPriority = bugsInFile.Where(b => b.priority.ToLower().Contains(input)).Select(b => b.Display());
+                        var enhancePriority = enhanceInFile.Where(e => e.priority.ToLower().Contains(input)).Select(e => e.Display());
+                        var taskPriority = tasksInFile.Where(t => t.priority.ToLower().Contains(input)).Select(t => t.Display());
 
-                        var enhancePriority = enhanceInFile.Where(e => e.priority.ToLower().Contains(input));
-                        var enhancePriorityCount = enhancePriority.Count();
+                        var ticketPriority = bugPriority.Concat(enhancePriority).Concat(taskPriority);
+                        int ticketCount = ticketPriority.Count();
 
-                        var taskPriority = tasksInFile.Where(t => t.priority.ToLower().Contains(input));
-                        var taskPriorityCount = taskPriority.Count();
-
-                        cw.WriteToScreen($"There are {bugPriorityCount + enhancePriorityCount + taskPriorityCount} tickets with a priority of \"{input}\".");
-                        foreach (var b in bugPriority) 
+                        cw.WriteToScreen($"There are {ticketCount} tickets with a priority of \"{input}\".");
+                        foreach (var t in ticketPriority) 
                         {
-                            cw.WriteToScreen(b.Display());
-                        }
-                        foreach (var e in enhancePriority)
-                        {
-                            cw.WriteToScreen(e.Display());
-                        }
-                        foreach (var t in taskPriority)
-                        {
-                            cw.WriteToScreen(t.Display());
+                            cw.WriteToScreen(t);
                         }
                     }
                     else if (search == "3")
@@ -295,16 +279,18 @@ namespace ticketingSystem
                         cw.WriteToScreen("Enter name of submitter");
                         var input = cr.ReadFromConsole().ToLower();
 
-                        var bugSubmitter = bugsInFile.Where(b => b.submitter.ToLower().Contains(input));
-                        var bugSubmitterCount = bugSubmitter.Count();
+                        var bugSubmitter = bugsInFile.Where(b => b.submitter.ToLower().Contains(input)).Select(b => b.Display());                        
+                        var enhanceSubmitter = enhanceInFile.Where(e => e.submitter.ToLower().Contains(input)).Select(e => e.Display());
+                        var taskSubmitter = tasksInFile.Where(t => t.submitter.ToLower().Contains(input)).Select(t => t.Display());
 
-                        var enhanceSubmitter = enhanceInFile.Where(e => e.submitter.ToLower().Contains(input));
-                        var enhanceSubmitterCount = enhanceSubmitter.Count();
+                        var ticketSubmitter = bugSubmitter.Concat(enhanceSubmitter).Concat(taskSubmitter);
+                        int ticketCount = ticketSubmitter.Count();                        
 
-                        var taskSubmitter = tasksInFile.Where(t => t.submitter.ToLower().Contains(input));
-                        var taskSubmitterCount = taskSubmitter.Count();
-
-                        cw.WriteToScreen($"There are {bugSubmitterCount + enhanceSubmitterCount + taskSubmitterCount} tickets with a submitter of \"{input}\".");
+                        cw.WriteToScreen($"There are {ticketCount} tickets with a submitter of \"{input}\".");
+                        foreach (var t in ticketSubmitter)
+                        {
+                            cw.WriteToScreen(t);
+                        }
                     }
                 }
             }
