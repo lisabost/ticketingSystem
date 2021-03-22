@@ -28,7 +28,7 @@ namespace ticketingSystem
         //methods
         public override string Display()
         {
-            return base.Display() + $"Severity: {severity}\n";
+            return "Bug/Defect\n" + base.Display() + $"Severity: {severity}\n";
         }
     }
 }

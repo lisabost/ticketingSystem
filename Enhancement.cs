@@ -35,7 +35,7 @@ namespace ticketingSystem
         //methods
         public override string Display()
         {
-            return base.Display() + $"Software: {software}\nCost: {cost:C}\nReason: {reason}\nEstimate: {estimate}\n";
+            return "Enhancement\n" + base.Display() + $"Software: {software}\nCost: {cost:C}\nReason: {reason}\nEstimate: {estimate}\n";
         }
 
         

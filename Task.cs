@@ -31,7 +31,7 @@ namespace ticketingSystem
         //methods
         public override string Display()
         {
-            return base.Display() + $"Project Name: {projectName}\nDue Date: {dueDate:d}\n";
+            return "Task\n" + base.Display() + $"Project Name: {projectName}\nDue Date: {dueDate:d}\n";
         }
     }
 }
