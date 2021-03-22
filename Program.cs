@@ -237,7 +237,7 @@ namespace ticketingSystem
                     if (search == "1")
                     {
                         //search by status
-                        cw.WriteToScreen("Enter status");
+                        cw.WriteToScreen("Enter status (Open, Closed)");
                         var input = cr.ReadFromConsole().ToLower();
 
                         var bugStatuses = bugsInFile.Where(b => b.status.ToLower().Contains(input));
@@ -263,7 +263,7 @@ namespace ticketingSystem
                     else if (search == "2")
                     {
                         //search by priority
-                        cw.WriteToScreen("Enter priority");
+                        cw.WriteToScreen("Enter priority (High, Medium, Low)");
                         var input = cr.ReadFromConsole().ToLower();
 
                         var bugPriority = bugsInFile.Where(b => b.priority.ToLower().Contains(input));
@@ -292,6 +292,19 @@ namespace ticketingSystem
                     else if (search == "3")
                     {
                         //search by submitter
+                        cw.WriteToScreen("Enter name of submitter");
+                        var input = cr.ReadFromConsole().ToLower();
+
+                        var bugSubmitter = bugsInFile.Where(b => b.submitter.ToLower().Contains(input));
+                        var bugSubmitterCount = bugSubmitter.Count();
+
+                        var enhanceSubmitter = enhanceInFile.Where(e => e.submitter.ToLower().Contains(input));
+                        var enhanceSubmitterCount = enhanceSubmitter.Count();
+
+                        var taskSubmitter = tasksInFile.Where(t => t.submitter.ToLower().Contains(input));
+                        var taskSubmitterCount = taskSubmitter.Count();
+
+                        cw.WriteToScreen($"There are {bugSubmitterCount + enhanceSubmitterCount + taskSubmitterCount} tickets with a submitter of \"{input}\".");
                     }
                 }
             }
