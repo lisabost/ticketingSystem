@@ -253,6 +253,7 @@ namespace ticketingSystem
                         foreach (var t in ticketStatus) {
                             cw.WriteToScreen(t);
                         }
+                        logger.Info($"Search by Status Ticket Count: {ticketCount}");
                     }
                     else if (search == "2")
                     {
@@ -272,6 +273,7 @@ namespace ticketingSystem
                         {
                             cw.WriteToScreen(t);
                         }
+                        logger.Info($"Search by Priority Ticket Count: {ticketCount}");
                     }
                     else if (search == "3")
                     {
@@ -291,6 +293,7 @@ namespace ticketingSystem
                         {
                             cw.WriteToScreen(t);
                         }
+                        logger.Info($"Search by Submitter Ticket Count: {ticketCount}");
                     }
                 }
             }
